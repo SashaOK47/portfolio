@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.68635d41.css",
-    "main.js": "/static/js/main.11133392.js",
-    "static/media/sound.mp3": "/static/media/sound.3abecec108bb78e7b18c.mp3",
-    "static/media/noise2.gif": "/static/media/noise2.93fe26ae97a4df3d4e67.gif",
-    "static/media/bg.mp4": "/static/media/bg.17bb8b38ac952d238402.mp4",
-    "static/media/app-2.png": "/static/media/app-2.73143c995f75769e8178.png",
-    "static/media/project-2.jpg": "/static/media/project-2.7367eafe07f1c82cab9f.jpg",
-    "static/media/project-1.jpg": "/static/media/project-1.c5af9d4873db712d3501.jpg",
-    "static/media/app-1.png": "/static/media/app-1.657a16749ba5b6d4137e.png",
-    "static/media/project-3.jpg": "/static/media/project-3.4e4f52eb0168c548ff43.jpg",
-    "static/media/repair.jpg": "/static/media/repair.0a1424490fd022d3c038.jpg",
-    "index.html": "/index.html",
-    "main.68635d41.css.map": "/static/css/main.68635d41.css.map",
-    "main.11133392.js.map": "/static/js/main.11133392.js.map"
+    "main.css": "/portfolio/static/css/main.63eb6a56.css",
+    "main.js": "/portfolio/static/js/main.b194ac53.js",
+    "static/media/sound.mp3": "/portfolio/static/media/sound.3abecec108bb78e7b18c.mp3",
+    "static/media/noise2.gif": "/portfolio/static/media/noise2.93fe26ae97a4df3d4e67.gif",
+    "static/media/bg.mp4": "/portfolio/static/media/bg.17bb8b38ac952d238402.mp4",
+    "static/media/app-2.png": "/portfolio/static/media/app-2.73143c995f75769e8178.png",
+    "static/media/project-2.jpg": "/portfolio/static/media/project-2.7367eafe07f1c82cab9f.jpg",
+    "static/media/project-1.jpg": "/portfolio/static/media/project-1.c5af9d4873db712d3501.jpg",
+    "static/media/app-1.png": "/portfolio/static/media/app-1.657a16749ba5b6d4137e.png",
+    "static/media/project-3.jpg": "/portfolio/static/media/project-3.4e4f52eb0168c548ff43.jpg",
+    "static/media/repair.jpg": "/portfolio/static/media/repair.0a1424490fd022d3c038.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.63eb6a56.css.map": "/portfolio/static/css/main.63eb6a56.css.map",
+    "main.b194ac53.js.map": "/portfolio/static/js/main.b194ac53.js.map"
   },
   "entrypoints": [
-    "static/css/main.68635d41.css",
-    "static/js/main.11133392.js"
+    "static/css/main.63eb6a56.css",
+    "static/js/main.b194ac53.js"
   ]
 }
