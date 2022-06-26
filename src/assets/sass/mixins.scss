@@ -1,0 +1,61 @@
+@import './vars';
+@mixin wrapper {
+  padding: 2.5rem 9rem;
+  @include desktop {
+    padding: 2.5rem 5rem;
+  }
+  @include mobile {
+    padding: 2.5rem 2rem;
+  }
+}
+@mixin sectionTitle {
+  font-size: $fontXXXL;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px $secondary;
+  -webkit-text-fill-color: transparent;
+  @include desktopLg {
+    font-size: $fontXXL;
+  }
+  @include tablet {
+    font-size: $fontXL;
+  }
+  @include mobile {
+    font-size: $fontLg;
+  }
+}
+@mixin desktopLg {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin tabletLg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin tabletSm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin custom($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}

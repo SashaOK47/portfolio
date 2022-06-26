@@ -1,0 +1,21 @@
+:root {
+  --primary: #000000;
+  --secondary: #f9f5ef;
+  --red: rgb(238, 52, 74);
+}
+$primary: var(--primary);
+$secondary: var(--secondary);
+$red: var(--red);
+$colorRgbaBlack: rgba($primary, .5);
+$colorRgbaWhite: rgba(#f9f5ef, .5);
+$gradient: linear-gradient(to right, transparent, $secondary, transparent);
+
+$fontSm: 0.7rem; // +
+$fontMd: 1rem;
+$fontLg: 2rem;
+$fontXL: 3rem;
+$fontXXL: 4rem;
+$fontXXXL: 5rem; // +
+$fontBig: 11rem;
+
+$navHeight: 5rem;
