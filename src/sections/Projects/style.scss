@@ -1,0 +1,171 @@
+@import '../../assets/sass/vars';
+@import '../../assets/sass/mixins';
+.projects {
+  @include wrapper;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  position: relative;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 5px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 1px;
+  //   background: linear-gradient(to right, transparent, #fff, transparent);
+  // }
+
+  &__title {
+    @include sectionTitle;
+  }
+  &__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+    @include desktop{
+      flex-direction: column-reverse;
+      padding: 4rem 0;
+    }
+    @include mobile {
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #f9f5ef, transparent);
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__description {
+    margin-right: 2rem;
+    width: 31rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include desktop {
+      width: 100%;
+    }
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+  &__num {
+    font-size: 16rem;
+    opacity: .08;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+    z-index: -1;
+    @include desktop {
+      bottom: -4rem;
+    }
+    @include mobile {
+      font-size: 10rem;
+    }
+  }
+  &__name {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    @include desktop {
+      font-size: 3rem;
+      text-align: center;
+    }
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    @include desktop {
+      justify-content: center;
+    }
+  }
+  &__type {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    @include desktop {
+      font-size: 1.5rem;
+    }
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+  &__line {
+    margin: 0 1rem;
+    display: inline-block;
+    width: 3rem;
+    height: 1px;
+    background-color: #fff;
+  }
+  &__year {
+    font-size: 3rem;
+    @include desktop {
+      font-size: 2rem;
+    }
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+  &__links {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    color: $colorRgbaWhite;
+    @include mobile {
+      margin-top: 2rem;
+      margin-right: 0;
+    }
+  }
+  &__img {
+    display: block;
+    position: relative;
+    max-width: 55rem;
+    //box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.5);
+    //width: 800px;
+    //height: 350px;
+    @include desktop {
+      margin-bottom: 2rem;
+      max-width: 100%;
+    }
+    a {
+      //display: block;
+      //width: 100%;
+      //height: 100%;
+      img {
+        width: 100%;
+        //height: 100%;
+        //object-fit: contain;
+        height: auto;
+      }
+    }
+  }
+  &__btn {
+    text-align: center;
+    margin-bottom: 100px;
+    button {
+      margin-top: 5rem;
+    }
+  }
+}
+
+
+
+
+

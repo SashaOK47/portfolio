@@ -27,8 +27,8 @@ export const projects = [
     title: "Personal Portfolio",
     type: "frontend",
     year: 2022,
-    linkDemo: "https://sashaok47.github.io/WD-tasks",
-    linkCode: "https://github.com/SashaOK47/WD-tasks/",
+    linkDemo: "/",
+    linkCode: "!#",
   },
   {
     id: 4,
@@ -54,8 +54,8 @@ export const projects = [
     title: "Personal Portfolio",
     type: "frontend",
     year: 2022,
-    linkDemo: "https://sashaok47.github.io/WD-tasks",
-    linkCode: "https://github.com/SashaOK47/WD-tasks/",
+    linkDemo: "/",
+    linkCode: "!#",
   },
 ];
 
@@ -95,7 +95,7 @@ export const socialLinks = [
   {
     id: 2,
     title: "github",
-    url: "https://github.com/SashaOK47",
+    url: "https://github.com/",
   },
   {
     id: 3,

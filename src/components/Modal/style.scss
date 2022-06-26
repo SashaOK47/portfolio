@@ -1,0 +1,93 @@
+@import '../../assets/sass/vars';
+@import '../../assets/sass/mixins';
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &__content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    //color: #000;
+    color: $red;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+    font-family: 'Montserat', sans-serif;
+    width: 50vw;
+    transform: scale(0);
+    transition: .5s all;
+    position: relative;
+    @include tabletSm {
+      width: 70%;
+    }
+    @include mobile {
+      width: 90%;
+    }
+    p {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include tabletSm {
+        font-size: 1.5rem;
+      }
+      @include mobile {
+        font-size: 1rem;
+      }
+    }
+    img {
+      width: 200px;
+      height: auto;
+    }
+    &.active {
+      transform: scale(1);
+    }
+  }
+  &__close {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 3px;
+      height: 4rem;
+      background-color: #000;
+      transform: rotate(45deg);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 3px;
+      height: 4rem;
+      background-color: #000;
+      transform: rotate(-45deg);
+    }
+  }
+}

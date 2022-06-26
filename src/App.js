@@ -48,7 +48,8 @@ function App() {
             <LocomotiveScrollProvider
               options={{
                 smooth: true,
-                inertia: 0.1,
+                // inertia: 0.1,
+                lerp: 0.02,
                 smartphone: {
                   smooth: true,
                 },

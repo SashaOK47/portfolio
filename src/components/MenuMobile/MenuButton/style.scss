@@ -1,0 +1,87 @@
+@import "../../../assets/sass/vars";
+@import "../../../assets/sass/mixins";
+
+.menu-mobile__button {
+  position: fixed;
+  right: .7rem;
+  top: 2rem;
+  z-index: 299;
+  transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: none;
+  // mix-blend-mode: difference;
+  @include custom(1200px) {
+    display: block;
+  }
+  .menu-mobile__btn {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: 0 0;
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    span {
+      &::after,
+      &::before {
+        content: '';
+        width: 2px;
+        height: 48px;
+        position: absolute;
+        background-color: #fff;
+        left: 50%;
+        top: 50%;
+        display: block;
+
+        will-change: transform;
+        transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+      &::before {
+        transform: translate(-5px, -50%) scale(0.7) rotate(180deg);
+      }
+
+      &::after {
+        transform: translate(5px, -50%) scale(0.7) rotate(0);
+      }
+    }
+
+  }
+  .menu-mobile__text {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    transform: translateY(-50%);
+    font-size: $fontSm;
+    cursor: pointer;
+    transition: opacity .5s ease;
+  }
+  &.open {
+    transform: translateX(-80px);
+    transition-delay: 0.2s;
+    @include mobile {
+      transform: translateX(-20px);
+    }
+    .menu-mobile__btn {
+      transform: rotate(-270deg);
+    }
+    span {
+      &:before {
+        background-color: black;
+        transform: translate(-50%, -50%) rotate(315deg);
+        @include mobile {
+          background-color: white;
+        }
+      }
+      &:after {
+        background-color: black;
+        transform: translate(-50%, -50%) rotate(45deg);
+        @include mobile {
+          background-color: white;
+        }
+      }
+    }
+    .menu-mobile__text {
+      opacity: 0;
+    }
+  }
+}

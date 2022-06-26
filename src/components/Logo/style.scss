@@ -1,0 +1,17 @@
+@import '../../assets/sass/vars';
+@import '../../assets/sass/mixins';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    color: rgba(#f9f5ef, .5);
+    font-weight: bold;
+    text-transform: uppercase;
+    span {
+      font-size: $fontSm;
+      font-weight: normal;
+      color: $secondary;
+    }
+  }
+}

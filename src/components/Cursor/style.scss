@@ -1,0 +1,46 @@
+@import '../../assets/sass/vars';
+.cursor, .cursor2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  pointer-events: none;
+  z-index: 302;
+  mix-blend-mode: difference;
+}
+
+.cursor {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  transition-property: width, height, border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.hovered {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.cursor2 {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $secondary;
+  transition: all 0.5s ease-in-out;
+  transition-property: width, height, border, opacity;
+  mix-blend-mode: exclusion;
+  &.hovered {
+    opacity: 0;
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

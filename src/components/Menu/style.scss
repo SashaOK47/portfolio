@@ -1,0 +1,39 @@
+@import '../../assets/sass/vars';
+@import '../../assets/sass/mixins';
+
+.menu {
+  @include custom(1200px) {
+    display: none;
+  }
+}
+.menu__list {
+  position: relative;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  position: relative;
+  &:not(:first-of-type) {
+    margin-left: 3rem;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width .5s ease-in-out;
+    overflow-x: hidden;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+.menu__link {
+ text-transform: uppercase;
+ cursor: pointer;
+}

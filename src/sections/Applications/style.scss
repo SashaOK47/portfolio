@@ -1,0 +1,114 @@
+@import "../../assets/sass/vars";
+@import '../../assets/sass/mixins';
+
+.applications {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.applications__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 90vh;
+  box-shadow: 0 0 0 2.5vw $primary;
+  border: 3px solid #fff;
+  z-index: 11;
+  @include desktop {
+    box-shadow: 0 0 0 3.3vw $primary;
+  }
+  @include tablet {
+    width: 45vw;
+  }
+  @include tabletLg {
+    box-shadow: 0 0 0 4vw $primary;
+  }
+  @include tabletSm {
+    box-shadow: 0 0 0 6.5vw $primary;
+  }
+  @include mobile {
+    width: 90%;
+    box-shadow: 0 0 0 12vw $primary;
+  }
+}
+.applications__title {
+  @include sectionTitle;
+  position: absolute;
+  top: .5rem;
+  left: 6rem;
+  z-index: 12;
+  mix-blend-mode: difference;
+}
+.applications__list {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 25vw;
+  height: auto;
+  /* width: 65%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    width: 40vw;
+  }
+  
+  @include mobile {
+    width: 80%;
+  }
+}
+.applications__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.applications__image {
+  width: 100%;
+  height: auto;
+}
+.applications__text {
+  width: 30%;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  position: absolute;
+  padding: 2rem;
+  top: 15%;
+  left: 5%;
+  z-index: 11;
+  mix-blend-mode: difference;
+  span {
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    @include desktop {
+      font-size: 2.5rem;
+    }
+    @include tabletLg {
+      font-size: 2rem;
+    }
+  }
+  @include desktop {
+    font-size: 2rem;
+  }
+  @include tabletLg {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  @include mobile {
+    display: none;
+  }
+  
+}
